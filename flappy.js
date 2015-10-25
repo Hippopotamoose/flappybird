@@ -46,7 +46,7 @@ function create() {
 
     game.input
         .onDown
-        .add(clickHandler);
+        .add(jump);
 
 
     game.input
@@ -78,9 +78,8 @@ function create() {
 
 }
 
-function clickHandler(event) {
-    game.add.sprite(event.x, event.y, "playerImg");
-}
+
+
 function jump() {
     game.sound.play("score");
     moveUp();
